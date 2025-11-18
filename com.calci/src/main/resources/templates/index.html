@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f5f5f5;
+        text-align: center;
+        padding-top: 40px;
+    }
+
+    h3 {
+        color: orange;
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    form {
+        background: white;
+        width: 300px;
+        margin: auto;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px #ccc;
+    }
+
+    label {
+        font-size: 18px;
+        display: block;
+        margin-top: 10px;
+    }
+
+    input {
+        width: 90%;
+        padding: 8px;
+        margin-top: 5px;
+        border-radius: 5px;
+        border: 1px solid #aaa;
+    }
+
+    button {
+        width: 100%;
+        padding: 10px;
+        margin-top: 15px;
+        border: none;
+        background-color: #007bff;
+        color: white;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #0056b3;
+    }
+</style>
+</head>
+<body>
+<h3 color:"orange">Calculator App</h3>
+<form action="calc">
+<label> Num1: </label>
+<input type="number" name="num1">
+<br>
+<label> Num2: </label>
+<input type="number" name="num2">
+<br>
+<button type="submit" name="operation" value="add">ADD</button><br> <br>
+<button type="submit" name="operation" value="sub">SUB</button><br> <br>
+<button type="submit" name="operation" value="mul">MUL</button><br> <br>
+<button type="submit" name="operation" value="div">DIV</button><br> <br>
+</form>
+</body>
+</html>
