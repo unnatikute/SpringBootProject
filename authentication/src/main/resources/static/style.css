@@ -1,0 +1,108 @@
+/* ------------------------------------------
+   GLOBAL STYLES
+------------------------------------------- */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #BFD8C7;          /* Light sage background */
+    color: #333;
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;            /* Center page horizontally */
+    align-items: center;                /* Center page vertically */
+    padding: 40px 20px;                 /* Equal left-right margin */
+}
+
+/* ------------------------------------------
+   MAIN CENTERED CONTAINER
+------------------------------------------- */
+.container {
+    width: 100%;
+    max-width: 480px;                   /* Perfect standard width */
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    text-align: center;
+}
+
+/* ------------------------------------------
+   HEADINGS
+------------------------------------------- */
+h3 {
+    color: #FD01DD;
+    font-size: 26px;
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #747EC0;
+}
+
+/* ------------------------------------------
+   FORM
+------------------------------------------- */
+.auth-form {
+    width: 100%;
+    margin-top: 20px;
+    text-align: left;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 6px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #747EC0;
+    border-radius: 6px;
+    margin-bottom: 18px;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+/* ------------------------------------------
+   SUBMIT BUTTON
+------------------------------------------- */
+.auth-form button[type="submit"] {
+    background-color: #01B9F3;
+    border: none;
+    width: 100%;
+    padding: 12px;
+    font-size: 17px;
+    font-weight: bold;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.auth-form button[type="submit"]:hover {
+    background-color: #FD01DD;
+}
+
+/* ------------------------------------------
+   MESSAGES
+------------------------------------------- */
+.success-msg {
+    color: green;
+    background-color: #E6F7E9;
+    border: 1px solid green;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.error-msg {
+    color: #DA7B86;
+    background-color: #FEEEEE;
+    border: 1px solid #DA7B86;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    text-align: center;
+}

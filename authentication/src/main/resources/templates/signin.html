@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Sign In</title>
+<link rel="stylesheet" th:href="@{/style.css}">
+</head>
+
+<body>
+<div class="container">
+    <h3>Sign In Here</h3>
+
+    <div th:if="${msg}" class="success-msg">
+        <p th:text="${msg}"></p>
+    </div>
+
+    <div th:if="${errorMsg}" class="error-msg">
+        <p th:text="${errorMsg}"></p>
+    </div>
+
+    <form action="signin" method="post" class="auth-form">
+
+        <label>Username:</label>
+        <input type="text" name="username">
+
+        <label>Password:</label>
+        <input type="password" name="password">
+
+        <button type="submit">Submit</button>
+    </form>
+</div>
+</body>
+</html>

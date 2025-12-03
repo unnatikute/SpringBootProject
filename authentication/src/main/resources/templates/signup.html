@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Sign Up</title>
+<link rel="stylesheet" th:href="@{/style.css}">
+</head>
+
+<body>
+<div class="container">
+    <h3>Sign Up Here</h3>
+
+    <div th:if="${msg}" class="error-msg">
+        <p th:text="${msg}"></p>
+    </div>
+
+    <form action="signup" method="post" class="auth-form">
+
+        <label>Username:</label>
+        <input type="text" name="username">
+
+        <label>Password:</label>
+        <input type="password" name="password">
+
+        <label>Email:</label>
+        <input type="email" name="email">
+
+        <label>Gender:</label>
+        <label>Male</label>
+        <input type="radio" name="gender" value="M">
+        <label>Female</label>
+        <input type="radio" name="gender" value="F">
+
+        <label>Address:</label>
+        <input type="text" name="address">
+
+        <button type="submit">Submit</button>
+
+    </form>
+</div>
+</body>
+</html>

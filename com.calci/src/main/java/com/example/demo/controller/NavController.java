@@ -19,7 +19,6 @@ public class NavController {
 			@RequestParam int num2,
 			@RequestParam String operation, Model m) {
 		int result = 0;
-		
 		if(operation.equals("add"))
 			result = cs.add(num1, num2);
 		else if (operation.equals("sub"))
